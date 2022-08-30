@@ -116,7 +116,7 @@ Public Class Form1
             BackgroundWorker1.WorkerReportsProgress = True
             BackgroundWorker1.ReportProgress(i / 10)
 
-            Threading.Thread.Sleep(25)
+            Threading.Thread.Sleep(3)
 
         Next
 
