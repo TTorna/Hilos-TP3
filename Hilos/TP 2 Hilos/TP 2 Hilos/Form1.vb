@@ -123,7 +123,9 @@ Public Class Form1
     End Sub
     Private Sub BackgroundWorker1_ProgressChanged(ByVal sender As Object, ByVal e As System.ComponentModel.ProgressChangedEventArgs) Handles BackgroundWorker1.ProgressChanged
 
-        ProgressBar1.Value = e.ProgressPercentage
+        If e.ProgressPercentage <= Val(TextBox1.Text) Then
+            ProgressBar1.Value = e.ProgressPercentage
+        End if
 
     End Sub
 
